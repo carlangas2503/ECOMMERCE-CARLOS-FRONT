@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import Render from "../components/render input/Render"
+import Render from "../../components/render input/Render"
 
 function Home() {
     const [iniText, setIniText] = useState('')
@@ -10,7 +10,7 @@ function Home() {
     return(
         <div>
             <input type="text" value={iniText} onChange={()=>changeIni(event)} />
-            <Render iniText ={iniText}/>
+            <Render iniText={iniText}/>
         </div>
     )
 }
